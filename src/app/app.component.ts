@@ -13,6 +13,7 @@ export class AppComponent {
   salario: number= 1234.5;
   fecha:Date = new Date();
   idioma:string = 'fr';
+  videoUrl:string='https://www.youtube.com/embed/sS90VVmBPcg?si=-rOeRthoEKp579r8';
 
 //Trabajar con algo asincrono
   valorPromesa = new Promise<string>((resolve)=>{
