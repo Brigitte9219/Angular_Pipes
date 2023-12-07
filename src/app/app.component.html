@@ -119,7 +119,12 @@
         </tr>
         <tr>
           <td> {{fecha}} </td>
-          <td> date:'MMMM-dd':'':{{idioma}} </td>
+          <td> date:'MMMM-dd':'':'{{idioma}}'
+          <br>
+          <button class="mr-1 btn btn-primary" (click)="idioma='es'">Español</button>
+          <button class="mr-1 btn btn-secondary" (click)="idioma='en'">Inglés</button>
+          <button class="mr-1 btn btn-success" (click)="idioma='fr'">Frances</button>
+        </td>
           <td> {{fecha| date:'MMMM-dd':'':idioma}} </td>
         </tr>
       </tbody>
