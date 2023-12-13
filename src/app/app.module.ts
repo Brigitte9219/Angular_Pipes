@@ -6,6 +6,8 @@ import localEs from '@angular/common/locales/es';
 import localFr from '@angular/common/locales/fr';
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { ContrasenaPipe } from './pipes/contrasena.pipe';
+import { PaginationComponent } from './components/pagination/pagination.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 registerLocaleData (localEs);//se registra el idioma español
 registerLocaleData (localFr);//Se registra el idioma frances
@@ -15,10 +17,12 @@ registerLocaleData (localFr);//Se registra el idioma frances
   declarations: [
     AppComponent,
     DomseguroPipe,
-    ContrasenaPipe
+    ContrasenaPipe,
+    PaginationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [
     {

@@ -1,4 +1,17 @@
 <h1 class="mt-3">Pipes<small>Angular</small></h1>
+<!--Paginación-->
+<div *ngFor="let item of currentItems">
+  <!-- renderizar cada elemento según el modelo de datos -->
+  <div>{{ item.name }} - {{ item.description }}</div>
+</div>
+
+<app-pagination
+  [currentPage]="currentPage"
+  [totalPages]="totalPages"
+  (pageChanged)="onPageChanged($event)"
+></app-pagination>
+
+<!--Finaliza paginación-->
 <hr>
 
 <div class="row">
